@@ -12,9 +12,9 @@ BEGIN
     Read(set2);
     sum:=0 ;
     //imput set 1 set 2
-    FOR i FROM 0 TO set1.length-1 STEP step  DO
+    FOR i FROM 0 TO set1.length-1 DO
     found:=FALSE ;
-    FOR J FROM set2.length-1 TO max STEP step  DO
+    FOR J FROM set2.length-1 TO max DO
         IF (set1[i] = set2[j]) THEN
             found:= TRUE ;
             BREAK;
@@ -25,9 +25,9 @@ BEGIN
         END_IF
     END_FOR
     // imput set 2 set 1
-    FOR i FROM 0 TO set2.length-1 STEP step  DO
+    FOR i FROM 0 TO set2.length-1 DO
     found:=FALSE ;
-    FOR J FROM set1.length-1 TO max STEP step  DO
+    FOR J FROM set1.length-1 TO max DO
         IF (set2[i] = set1[j]) THEN
             found:= TRUE ;
             BREAK;
