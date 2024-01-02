@@ -1,4 +1,5 @@
 ALGORITHM algorithm_name
+//data
 VAR
     set1, set2 : ARRAY_OF INTEGER ;
     i, j, sum: INTEGER ;
