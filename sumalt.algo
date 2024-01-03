@@ -1,14 +1,14 @@
-ALGORITHM algorithm_name
+ALGORITHM data_structure
 //data
 VAR
     set1, set2 : ARRAY_OF INTEGER ;
     i, j, sum: INTEGER ;
     found: BOOLEAN
 BEGIN
-    //PREMIRE LISTE set1: [3,1,7,9]
+    //PREMIRE LISTE set1:
     Write("Give me the first list") ;
     Read(set1);
-    //DEUXIEME LISTE set2: [2,4,1,0,3]
+    //DEUXIEME LISTE set2: 
     Write("Give me the second list") ;
     Read(set2);
     sum:=0 ;
@@ -38,5 +38,5 @@ BEGIN
             sum:=sum+set2[i]
         END_IF
     END_FOR
-    Write("the sum of set 1 and set 2")
+    Write("the sum of set 1 and set 2", sum)
 END
