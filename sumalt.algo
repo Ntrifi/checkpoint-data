@@ -15,7 +15,7 @@ BEGIN
     //imput set 1 set 2
     FOR i FROM 0 TO set1.length-1 DO
     found:=FALSE ;
-    FOR J FROM set2.length-1 TO max DO
+    FOR J FROM 0 TO set2.length-1  DO
         IF (set1[i] = set2[j]) THEN
             found:= TRUE ;
             BREAK;
@@ -28,7 +28,7 @@ BEGIN
     // imput set 2 set 1
     FOR i FROM 0 TO set2.length-1 DO
     found:=FALSE ;
-    FOR J FROM set1.length-1 TO max DO
+    FOR J FROM 0 TO set1.length-1 DO
         IF (set2[i] = set1[j]) THEN
             found:= TRUE ;
             BREAK;
